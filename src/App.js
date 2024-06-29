@@ -64,7 +64,8 @@ const App = () => {
     setError(null);
     try {
       //update backend link
-      const response = await fetch("https://llm-summary.onrender.com/summary", {
+      const response = await fetch(" http://0.0.0.0:80/summary", {
+        // const response = await fetch("https://llm-summary.onrender.com/summary", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
